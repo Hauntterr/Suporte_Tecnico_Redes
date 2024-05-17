@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Videograph Template" />
-    <meta name="keywords" content="Videograph, unica, creative, html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/hero/technological.png" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home</title>
+    <title>Referências</title>
 
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-  </head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
 
-  <body>
+<body>
     <!-- Page Preloder -->
     <div id="preloder">
-      <div class="loader"></div>
+        <div class="loader"></div>
     </div>
 
     <!-- Header Section Begin -->
     <header class="header">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-2">
-                  <div class="header__logo">
-                      <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                  </div>
-              </div>
-              <div class="col-lg-10">
-                  <div class="header__nav__option">
-                      <nav class="header__nav__menu mobile-menu">
-                          <ul>
-                              <li><a href="./index.html">Home</a></li>
-                              <li><a href="./about.html">Sobre</a></li>
-                              <li><a href="./services.html">Formação</a></li>
-                              <li><a href="./portfolio.html">Mercado</a></li>
-                              <li><a href="./services.html">Referências</a></li>
-                              <li class="active"><a href="./contact.html">Contato</a></li>
-                          </ul>
-                      </nav>
-                
-                  </div>
-              </div>
-          </div>
-          <div id="mobile-menu-wrap"></div>
-      </div>
-  </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">Sobre</a></li>
+                                <li><a href="./services.html">Formação</a></li>
+                                <li><a href="./portfolio.html">Mercado</a></li>
+                                <li><a href="./referencias.html">Referências</a></li>
+                                <li class="active"><a href="./contact.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                  
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
     <!-- Header End -->
 
     <!-- Breadcrumb Begin -->
@@ -73,7 +69,7 @@
                     <div class="breadcrumb__text">
                         <h2>Contato</h2>
                         <div class="breadcrumb__links">
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                             <span>Contato</span>
                         </div>
                     </div>
@@ -154,11 +150,10 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
                         <h3>Entre em contato</h3>
-                        <form action="#">
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Website">
-                            <textarea placeholder="Mensagem"></textarea>
+                        <form onsubmit="mostrarAlerta(event)">
+                            <input type="text" placeholder="Nome" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea placeholder="Mensagem" required></textarea>
                             <button type="submit" class="site-btn">Enviar</button>
                         </form>
                     </div>
@@ -244,6 +239,13 @@
 </html>
 
 <script>
+    
+    
+    function mostrarAlerta(event) {
+            event.preventDefault(); // Previne o envio do formulário para fins de demonstração
+            alert("Sua mensagem foi enviada!");
+        }
+    
     document.addEventListener('DOMContentLoaded', () => {
     const uploadForm = document.getElementById('uploadForm');
     const fileList = document.getElementById('fileList');
