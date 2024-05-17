@@ -299,14 +299,19 @@
         fileList.innerHTML = '';
 
         files.forEach(file => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-                ${file.nome}
-                <button onclick="viewFile('${file.arquivos}')">View</button>
-                <button onclick="deleteFile(${file.id})">Delete</button>
-            `;
-            fileList.appendChild(listItem);
-        });
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+        <span class="file-name">${file.nome}</span>
+        <div class="button-container">
+            <button class="view-button" onclick="viewFile('${file.arquivos}')">View</button>
+            <button class="delete-button" onclick="deleteFile(${file.id})">Delete</button>
+        </div>
+    `;
+    listItem.classList.add('file-item'); // Adicionando uma classe ao elemento <li>
+    fileList.appendChild(listItem);
+});
+
+
     }
 
     // View file
