@@ -859,6 +859,7 @@ ol {
 -----------------------*/
 .footer {
   background: #0a0119;
+  margin-top: -15%;
 }
 
 .footer__top {
@@ -2167,4 +2168,93 @@ ol {
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
   }
+}
+
+
+
+
+
+
+
+.upload_arquivo {
+  display: inline-block;
+  padding: 2% 17%;
+  background-color: none;
+}
+
+.upload_arquivo h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.upload_arquivo form input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  background: transparent;
+  font-size: 16px;
+  color: #adadad;
+  padding-left: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.upload_arquivo form input:placeholder {
+  color: #adadad;
+}
+.upload_arquivo form input:focus {
+  border-color: #e1e1e1;
+}
+.upload_arquivo form textarea {
+  height: 110px;
+  width: 100%;
+  border: 1px solid rgba(225, 225, 225, 0.5);
+  background: transparent;
+  font-size: 16px;
+  color: #adadad;
+  padding-top: 12px;
+  padding-left: 20px;
+  font-weight: 300;
+  margin-bottom: 14px;
+  resize: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.upload_arquivo form textarea:placeholder {
+  color: #adadad;
+}
+.upload_arquivo form textarea:focus {
+  border-color: #e1e1e1;
+}
+
+
+
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-list li {
+  margin-bottom: 5px;
+}
+
+.file-list li a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.file-list li a:hover {
+  background-color: #e0e0e0;
 }

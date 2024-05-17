@@ -79,10 +79,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Contact us</h2>
+                        <h2>Contato</h2>
                         <div class="breadcrumb__links">
                             <a href="#">Home</a>
-                            <span>Contact</span>
+                            <span>Contato</span>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="contact__widget__item__text">
-                            <h4>Address</h4>
-                            <p>Los Angeles Gournadi, 1230 Bariasl</p>
+                            <h4>Endereço</h4>
+                            <p>Rua Tal, 65164 São Janeiro</p>
                         </div>
                     </div>
                 </div>
@@ -112,8 +112,8 @@
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="contact__widget__item__text">
-                            <h4>Hotline</h4>
-                            <p>1-677-124-44227 • 1-688-356-66889</p>
+                            <h4>Telefone</h4>
+                            <p>99 99 999-9999 • 00 00 000-0000</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                         </div>
                         <div class="contact__widget__item__text">
                             <h4>Email</h4>
-                            <p>Support@gmail.com</p>
+                            <p>redesgb@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -138,21 +138,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="contact__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798902705!2d-74.25986790365917!3d40.697670067823786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1596152431947!5m2!1sen!2sbd"
-                            height="450" style="border:0;"></iframe>
+                    <div class="contact__form">
+                        <h3>Adicionar Arquivo</h3>
+                        <form id="uploadForm">
+                            <input type="text" id="nome" placeholder="Nome do Arquivo" required />
+                                <input type="file" class="upload_arquivo" id="arquivo" required />
+                                
+                            <button type="submit" class="site-btn">Upload</button>
+                        </form>
+
+                        
+                        <h3>Lista de Arquivos</h3>
+                        <ul id="fileList" class="file-list">
+                            <!-- Itens da lista serão adicionados dinamicamente via JavaScript -->
+                        </ul>
+
+
+                        <h3>Pré-visualização de Arquivo</h3>
+                        <div id="filePreview"></div>
+                        <iframe id="filePreview"  style="border:0;"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
-                        <h3>Get in touch</h3>
+                        <h3>Entre em contato</h3>
                         <form action="#">
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Nome">
                             <input type="text" placeholder="Email">
                             <input type="text" placeholder="Website">
-                            <textarea placeholder="Message"></textarea>
-                            <button type="submit" class="site-btn">Send Message</button>
+                            <textarea placeholder="Mensagem"></textarea>
+                            <button type="submit" class="site-btn">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -167,82 +182,60 @@
             <div class="footer__top">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                        <div class="footer_top_logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
+              
                 </div>
             </div>
             <div class="footer__option">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer_option_item">
+                            <h5>Sobre suporte técnico em redes</h5>
+                            <p>O suporte técnico de redes é o encarregado de fazer com que os computadores 
+                                e dispositivos de uma empresa possam se comunicar entre si de maneira eficaz e segura.</p>
+                            <a href="./about.html" class="read__more">Leia mais<span class="arrow_right"></span></a>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Who we are</h5>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer_option_item">
+                            <h5>Formação nessa área</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
+                                <li><a href="./services.html">Formação</a></li>
+                                
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3">
-                        <div class="footer__option__item">
-                            <h5>Our work</h5>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer_option_item">
+                            <h5>Mercado de trabalho</h5>
                             <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
+                                <li><a href="./portfolio.html">Mercado</a></li>
+                              
                             </ul>
                         </div>
+                        
                     </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
+            <div img align="right"><a href="#"><img src="img/hero/next.png" width="3%"></a></div>
             <div class="footer__copyright">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <p class="footer_copyright_text">Copyright &copy;
+                            
+                            - Giulia Batistela e Bryan Gimenes - Todos os Direitos Reservados | Trabalho sem fins lucrativos.
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
@@ -257,3 +250,98 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const uploadForm = document.getElementById('uploadForm');
+    const fileList = document.getElementById('fileList');
+    const filePreview = document.getElementById('filePreview');
+
+    const apiBaseUrl = 'https://localhost:7164/Arquivo';
+
+    // Fetch and display files on page load
+    fetchFiles();
+
+    // Handle file upload
+    uploadForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const nome = document.getElementById('nome').value;
+        const file = document.getElementById('arquivo').files[0];
+
+        if (!file) {
+            alert("Selecione um arquivo para fazer o upload.");
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onloadend = async () => {
+            const base64String = reader.result.split(',')[1];
+            const arquivo = {
+                nome: nome,
+                arquivos: base64String
+            };
+
+            const response = await fetch(apiBaseUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(arquivo)
+            });
+
+            if (response.ok) {
+                alert('Arquivo adicionado com sucesso!');
+                fetchFiles();
+            } else {
+                alert('Erro ao adicionar arquivo.');
+            }
+        };
+        reader.readAsDataURL(file);
+    });
+
+    // Fetch files from the server
+    async function fetchFiles() {
+        const response = await fetch(apiBaseUrl);
+        const files = await response.json();
+        fileList.innerHTML = '';
+
+        files.forEach(file => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                ${file.nome}
+                <button onclick="viewFile('${file.arquivos}')">View</button>
+                <button onclick="deleteFile(${file.id})">Delete</button>
+            `;
+            fileList.appendChild(listItem);
+        });
+    }
+
+    // View file
+    window.viewFile = (base64String) => {
+        const objectElement = document.createElement('object');
+        objectElement.data = 'data:application/pdf;base64,' + base64String;
+        objectElement.type = 'application/pdf';
+        objectElement.width = '100%';
+        objectElement.height = '600px';
+
+        filePreview.innerHTML = '';
+        filePreview.appendChild(objectElement);
+    };
+
+    // Delete file
+    window.deleteFile = async (id) => {
+        const response = await fetch(`${apiBaseUrl}/${id}`, {
+            method: 'DELETE'
+        });
+
+        if (response.ok) {
+            alert('Arquivo excluído com sucesso!');
+            fetchFiles();
+        } else {
+            alert('Erro ao excluir arquivo.');
+        }
+    };
+});
+
+</script>
