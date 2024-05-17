@@ -1358,8 +1358,7 @@ ol {
   margin-bottom: 45px;
 }
 .blog__item:hover {
-  border: 1px solid transparent !important;
-  background: url(../img/blog/blog-2.jpg) no-repeat;
+  border: 1px  !important;
   background-size: cover;
 }
 .blog__item:hover ul li {
