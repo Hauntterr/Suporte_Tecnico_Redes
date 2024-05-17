@@ -859,7 +859,6 @@ ol {
 -----------------------*/
 .footer {
   background: #0a0119;
-  margin-top: -15%;
 }
 
 .footer__top {
@@ -1051,6 +1050,7 @@ ol {
 
 .about__text__desc {
   margin-top: -10px;
+  text-align: justify;
 }
 
 /*---------------------
@@ -2171,67 +2171,48 @@ ol {
 }
 
 
-
-
-
-
-
-.upload_arquivo {
-  display: inline-block;
-  padding: 2% 17%;
-  background-color: none;
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
 }
 
-.upload_arquivo h3 {
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-}
-.upload_arquivo form input {
-  height: 50px;
-  width: 100%;
-  border: 1px solid rgba(225, 225, 225, 0.5);
-  background: transparent;
-  font-size: 16px;
-  color: #adadad;
-  padding-left: 20px;
-  font-weight: 300;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-.upload_arquivo form input:placeholder {
-  color: #adadad;
-}
-.upload_arquivo form input:focus {
-  border-color: #e1e1e1;
-}
-.upload_arquivo form textarea {
-  height: 110px;
-  width: 100%;
-  border: 1px solid rgba(225, 225, 225, 0.5);
-  background: transparent;
-  font-size: 16px;
-  color: #adadad;
-  padding-top: 12px;
-  padding-left: 20px;
-  font-weight: 300;
-  margin-bottom: 14px;
-  resize: none;
-  -webkit-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
-}
-.upload_arquivo form textarea:placeholder {
-  color: #adadad;
-}
-.upload_arquivo form textarea:focus {
-  border-color: #e1e1e1;
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    border-collapse: collapse;
 }
 
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+background-color: rgba(255,255,255,0.3);
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
 
 
 
